@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ head_title|safe_join(' | ') }}</title>
+    {{ head }}
+    {{ styles }}
+    {{ scripts }}
+  </head>
+  <body class="{{ body_classes }}">
+
+    <!-- Pre-header / Top Bar -->
+    {% if page.top_bar %}
+    <div class="top-bar">
+      {{ page.top_bar }}
+    </div>
+    {% endif %}
+
+    <!-- Header -->
+    <header class="site-header">
+      <div class="branding">
+        {{ page.logo ? '<img src="' ~ page.logo ~ '" alt="Logo">' : '' }}
+        <h1 class="site-title">{{ site_name }}</h1>
+      </div>
+
+      <!-- Navigation Menu -->
+      {% if page.menu %}
+      <nav class="main-menu">
+        {{ page.menu }}
+      </nav>
+      {% endif %}
+
+      <!-- Search Block -->
+      {% if page.search %}
+      <div class="search-block">
+        {{ page.search }}
+      </div>
+      {% endif %}
+    </header>
+
+    <!-- Hero / Featured Section -->
+    {% if page.hero %}
+    <section class="hero">
+      {{ page.hero }}
+    </section>
+    {% endif %}
+
+    <!-- Main Content Area -->
+    <main class="site-main">
+      <div class="content-wrapper">
+        <div class="content-area">
+          {{ page.content }}
+        </div>
+
+        <!-- Sidebar -->
+        {% if page.sidebar %}
+        <aside class="sidebar">
+          {{ page.sidebar }}
+        </aside>
+        {% endif %}
+      </div>
+    </main>
+
+    <!-- Additional Sections -->
+    {% if page.featured %}
+    <section class="featured">
+      {{ page.featured }}
+    </section>
+    {% endif %}
+
+    {% if page.cta %}
+    <section class="call-to-action">
+      {{ page.cta }}
+    </section>
+    {% endif %}
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-widgets">
+        {{ page.footer }}
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; {{ "now"|date("Y") }} {{ site_name }}. All rights reserved.</p>
+      </div>
+    </footer>
+
+    {{ scripts_bottom }}
+  </body>
+</html>

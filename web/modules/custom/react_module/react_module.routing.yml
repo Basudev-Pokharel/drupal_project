@@ -1,0 +1,7 @@
+react_module.content:
+  path: "/react_module"
+  defaults:
+    _controller: 'Drupal\react_module\Controller\ReactListController::content'
+    _title: "React Module is here"
+  requirements:
+    _permission: "access content"

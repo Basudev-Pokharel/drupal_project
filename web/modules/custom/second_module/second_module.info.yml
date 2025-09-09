@@ -1,0 +1,4 @@
+name: Second module
+description: I hope it works
+type: module
+core_version_requirement: ^10 || ^11

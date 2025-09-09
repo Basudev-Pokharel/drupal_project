@@ -1,0 +1,14 @@
+name: Icrecream theme
+type: theme
+description: Just a simple Icecream theme for learning
+base theme: false
+version: 0.0.1
+core_version_requirement: ^10 || ^11
+libraries:
+  - icecream/global
+regions:
+  header: header
+  menu: menu
+  content: content
+  sidebar: sidebar
+  footer: footer

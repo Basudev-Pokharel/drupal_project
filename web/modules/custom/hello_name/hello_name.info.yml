@@ -1,0 +1,6 @@
+name: hello_name
+type: module
+description: "A simple module with name and FRORM"
+core_version_requirement: ^10 || ^11
+package: custom
+version: 0.0.1

@@ -1,0 +1,24 @@
+hello_name.content:
+  path: "/hello_name"
+  defaults:
+    _controller: 'Drupal\hello_name\Controller\HelloNameController::content'
+    _title: "HelloName"
+  requirements:
+    _permission: "access content"
+
+hello_name.greeting:
+  path: "/hello_name_greeting/{name}"
+  defaults:
+    _controller: 'Drupal\hello_name\Controller\HelloNameController::greeting'
+    _title: "Personalized Greeting"
+  requirements:
+    _permission: "access content"
+    _name: "[a-zA-Z]+"
+
+hello_name.form:
+  path: "/hello_name_form"
+  defaults:
+    _form: 'Drupal\hello_name\Form\HelloNameForm'
+    _title: "HelloName Form is here"
+  requirements:
+    _permission: "access content"

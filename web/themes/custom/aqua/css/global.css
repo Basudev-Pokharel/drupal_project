@@ -1,0 +1,175 @@
+/* --- Reset & Basics --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f8f9fa;
+}
+
+/* --- Top Bar --- */
+.top-bar {
+  background: #1a73e8;
+  color: #fff;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* --- Header --- */
+.site-header {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.branding img {
+  height: 50px;
+  width: auto;
+}
+
+.site-title {
+  font-size: 1.8rem;
+  color: #1a73e8;
+}
+
+.main-menu {
+  display: flex;
+  gap: 1rem;
+}
+
+.main-menu a {
+  text-decoration: none;
+  color: #333;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.main-menu a:hover {
+  background: #1a73e8;
+  color: #fff;
+}
+
+.search-block input {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* --- Hero Section --- */
+.hero {
+  background: linear-gradient(135deg, #1a73e8, #4fc3f7);
+  color: #fff;
+  text-align: center;
+  padding: 4rem 2rem;
+  font-size: 1.2rem;
+}
+
+/* --- Main Content --- */
+.content-wrapper {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.content-area {
+  flex: 3;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar {
+  flex: 1;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* --- Featured Section --- */
+.featured {
+  background: #ffe082;
+  padding: 3rem 2rem;
+  text-align: center;
+  margin: 2rem 0;
+  border-radius: 10px;
+}
+
+/* --- Call To Action --- */
+.call-to-action {
+  background: #ff7043;
+  color: #fff;
+  padding: 3rem 2rem;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.call-to-action button {
+  padding: 0.8rem 2rem;
+  border: none;
+  background: #fff;
+  color: #ff7043;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.call-to-action button:hover {
+  background: #ffd3c4;
+}
+
+/* --- Footer --- */
+.site-footer {
+  background: #333;
+  color: #fff;
+  padding: 2rem;
+}
+
+.footer-widgets {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-widgets div {
+  flex: 1 1 200px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* --- Responsive --- */
+@media (max-width: 992px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+
+  .main-menu {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
