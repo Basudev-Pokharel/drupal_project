@@ -1,0 +1,7 @@
+react_shopping.page:
+  path: "/home"
+  defaults:
+    _controller: 'Drupal\react_shopping\Controller\ReactShoppingController::content'
+    _title: "React Group Task Module is here"
+  requirements:
+    _permission: "access content"

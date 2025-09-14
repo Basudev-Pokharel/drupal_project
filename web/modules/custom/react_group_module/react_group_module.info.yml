@@ -1,0 +1,5 @@
+name: React Group module
+type: module
+description: "React Implementation via module in Drupal"
+core_version_requirement: ^10 || ^11
+version: 0.0.1

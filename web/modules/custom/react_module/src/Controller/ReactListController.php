@@ -12,7 +12,6 @@ class ReactListController extends ControllerBase
 
     {
         return ["#markup" => "Hello world This is react"];
-
         // return [
 
         //     "#markup" => '<div id="react-app"></div>',

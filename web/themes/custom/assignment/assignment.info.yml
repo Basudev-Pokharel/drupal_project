@@ -1,0 +1,13 @@
+name: Assignment theme
+type: theme
+description: Just a simple Assignment theme for learning
+base theme: false
+version: 0.0.1
+core_version_requirement: ^10 || ^11
+libraries:
+  - icecream/global
+regions:
+  header: header
+  menu: menu
+  content: content
+  footer: footer

@@ -1,0 +1,7 @@
+react_group_module.page:
+  path: "/home"
+  defaults:
+    _controller: 'Drupal\react_group_module\Controller\GroupController::content'
+    _title: "React Group Task Module is here"
+  requirements:
+    _permission: "access content"

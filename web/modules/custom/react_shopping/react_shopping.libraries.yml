@@ -1,0 +1,4 @@
+react_shopping:
+  version: VERSION
+  js:
+    js/dist/main.min.js: {}
